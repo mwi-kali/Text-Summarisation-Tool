@@ -47,7 +47,7 @@ Ensure you have:
 ### 2. Installation
 Clone the repository:
 ```bash
-git clone https://github.com/your-username/news-summariser.git
+git clone https://github.com/mwi-kali/Text-Summarisation-Tool.git
 cd news-summariser
 ```
 
@@ -108,7 +108,7 @@ http://127.0.0.1:5000
 
 ```json
 {
-   "url": "https://edition.cnn.com/2024/12/14/europe/italy-giorgia-meloni-trump-relationship-intl/index.html"
+   "url": "https://xxx.xxx.com/2024/12/14/xxx/index.html"
 }
 ```
 
@@ -116,7 +116,7 @@ http://127.0.0.1:5000
 
 ```json
 {
-   "title": "Italy's PM Giorgia Meloni's political journey",
+   "title": "xxxx",
    "summary_extractive": "...",
    "summary_abstractive": "...",
    "sentiment": "POSITIVE"
@@ -129,7 +129,7 @@ http://127.0.0.1:5000
 
 ```json
 {
-   "url": "https://feeds.bbci.co.uk/news/rss.xml"
+   "url": "https://feeds.xx.co.xx/xx/rss.xml"
 }
 ```
 

@@ -31,7 +31,7 @@ class ArticleService:
             url = article.get("url", "No URL")
             published = article.get("published", "Unknown Date")
 
-            if content:  # Only process articles with content
+            if content:  
                 summary_extractive = self.extractive.summarize(content)
                 summary_abstractive = self.abstractive.summarize(content)
                 sentiment = self.sentiment.analyze(content)
@@ -50,7 +50,6 @@ class ArticleService:
             }
             results.append(article_data)
 
-            # Save to database
             db.session.add(Article(
                 title=title,
                 content=content,
@@ -60,5 +59,6 @@ class ArticleService:
                 url=url,
                 published=published
             ))
+            
         db.session.commit()
         return results

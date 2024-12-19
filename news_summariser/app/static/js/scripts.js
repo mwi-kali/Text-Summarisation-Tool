@@ -34,11 +34,13 @@ document.getElementById("fetchForm").addEventListener("submit", function (e) {
                 });
             } else {
                 outputDiv.innerHTML = `
-                    <a href="${data.url}" target="_blank"><h4>${data.title || "No Title"}</h4></a>
-                    <p><b>Extractive Summary</b> <br/> ${data.summary_extractive || "Not available"}</p>
-                    <p><b>Abstractive Summary</b> <br />${data.summary_abstractive || "Not available"}</p>
-                    <p><b>Sentiment</b> <br />${data.sentiment || "Not available"}</p>
-                    <p><b>Date Published</b> <br />${data.published || "Unknown Date"}</p>
+                    <div class="article-card">
+                        <a href="${data.url}" target="_blank"><h4>${data.title || "No Title"}</h4></a>
+                        <p><b>Extractive Summary</b> <br/> ${data.summary_extractive || "Not available"}</p>
+                        <p><b>Abstractive Summary</b> <br />${data.summary_abstractive || "Not available"}</p>
+                        <p><b>Sentiment</b> <br />${data.sentiment || "Not available"}</p>
+                        <p><b>Date Published</b> <br />${data.published || "Unknown Date"}</p>
+                    </div>
                 `;
             }
         })
